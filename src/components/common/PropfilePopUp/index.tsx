@@ -69,7 +69,8 @@ export const ProfilePopUp = (props: ProfilePopUpProps) => {
               style={{ textDecorationLine: 'underline', cursor: 'pointer' }}
               onClick={() => {
                 removeCookie();
-                window.location.reload();
+                router.push('/');
+                router.reload();
               }}
             >
               로그아웃
